@@ -1,0 +1,60 @@
+.fondo-uno{
+    background-color: #e37222;
+}
+
+.fondo-dos{
+    background-color: #07889b;
+}
+
+.fondo-tres{
+    background-color: #66b9bf;
+}
+
+.fondo-cuatro{
+    background-color: #eeaa7b;
+}
+
+.menu-fondo2{
+    background: #6289D6;
+}
+
+th{
+    text-align: right;
+    width: 45%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+td{
+    text-align: left;
+    font-size: 25px;
+}
+
+img{
+    padding-top: 25px;
+    margin: 0px;
+    
+}
+
+.fondo{
+    background-image: url(img/banner-4.jpeg);
+    height: 300px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    filter:brightness(1 );
+}
+
+/*
+body{
+    background-image: url(img/banner-3.jpeg);
+    background-color: rgba(0,0,0,0.8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+*/
+
+a{
+    font-size: 100px;
+}

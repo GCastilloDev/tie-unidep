@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Hoja de estilos de fontello -->
+    <link rel="stylesheet" href="css/fontello.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST MOSS</title>
+
+
+</head>
+
+<body>
+
+    <!-- Menú fijo -->
+    <div class="navbar-fixed">
+        <nav class="" id="menu-fondo">
+            <!-- La clase sidenav-trigger permite ocultar el icono en dispositivos medianos -->
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons">menu</i> </a>
+
+            <div class="nav-wrapper container">
+                <!-- Logo menú -->
+                <a href="" class="hide-on-med-and-up right white-text" id="logo-text-movil">TÉCNICAS E
+                    INSTRUMENTOS DE EVALUACIÓN</a>
+                <ul class="center">
+                    <li><a href="" class="brand-logo hide-on-med-and-down white-text" id="logo-text">TÉCNICAS E
+                            INSTRUMENTOS DE EVALUACIÓN</a></li>
+                </ul>
+
+
+                <!-- CONTENIDO DEL SUBMENU TESTS-->
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="#!" class="black-text">Terman Merril</a></li>
+                    <li><a href="testmoss.html" class="black-text">Test de Moss</a></li>
+                    <li><a href="#!" class="black-text">Test de Cleaver</a></li>
+                    <li><a href="testmmpi.html" class="black-text">Test MMPI</a></li>
+                    <li><a href="#!" class="black-text">Test Domino</a></li>
+                    <li><a href="#!" class="black-text">Test Raven</a></li>
+                    <li><a href="#!" class="black-text">Test de Colores</a></li>
+                </ul>
+
+                <!-- Clase oculta en dispositivos pequeños -->
+                <!-- Menú para dispositivos superiores a medianos -->
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="index.html" id="text-menu">Inicio</a></li>
+                    <li><a href="" id="text-menu">Recursos</a></li>
+                    <li><a class="dropdown-trigger" href="" id="text-menu" data-target="dropdown2">Tests<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- SUBMENU PARA MOVIL -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!" class="black-text">Terman Merril</a></li>
+        <li><a href="testmoss.html" class="black-text">Test de Moss</a></li>
+        <li><a href="#!" class="black-text">Test de Cleaver</a></li>
+        <li><a href="testmmpi.html" class="black-text">Test MMPI</a></li>
+        <li><a href="#!" class="black-text">Test Domino</a></li>
+        <li><a href="#!" class="black-text">Test Raven</a></li>
+        <li><a href="#!" class="black-text">Test de Colores</a></li>
+    </ul>
+
+    <!-- Menú para móviles -->
+    <ul class="sidenav fondo-movil" id="menu-responsive">
+        <li><a href="index.html" class="white-text" id="text-menu">Inicio</a></li>
+        <li><a href="" class="white-text" id="text-menu">Tests</a></li>
+        <li><a href="" class="white-text" id="text-menu">Recursos</a></li>
+        <li><a class="dropdown-trigger white-text" href="" id="text-menu" data-target="dropdown1">Tests<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+
+    <!-- Banner del test -->
+    <div class="center">
+        <img src="img/testmoss-banner.jpeg" width="100%">
+    </div>
+
+    <h1 class="center">Prueba de Moss</h1>
+    <h4 class="center">Instrucciones</h4>
+
+    <div class="container">
+        <p id="instrucciones">Para cada uno de los problemas siguientes, se sugieren cuatro respuestas correctas,
+            seleccione la respuesta correcta.
+        </p>
+        <p class="red-text">Debe responder todas las preguntas para poder obtener un resultado.</p>
+    </div>
+
+    <!-- SECCION DE PREGUNTAS -->
+    <div class="container">
+        <form action="tesmoss-resultado.php" method="POST">
+            <ol id="preguntas">
+                <!-- Pregunta 1 -->
+                <li>Se le ha asignado un puesto en una gran empresa.
+                    La mejor forma de establecer relaciones amistosas y cordiales con sus nuevos compañeros será:</li>
+                <div class="input-field">
+                    <select name="p01">
+                        <option value="" disabled selected>Selecciona la respuesta correcta</option>
+                        <option value="0">Evitando tomar nota de los errores en que ellos incurran.</option>
+                        <option value="0">Hablando bien de ellos al jefe.</option>
+                        <option value="1">Mostrando interés en el trabajo de ellos.</option>
+                        <option value="0">Pidiéndoles le permitan hacer los trabajos que usted puede hacer mejor.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 2 -->
+                <li>Tiene usted un empleado muy eficiente, pero que constantemente se queja del trabajo;
+                    sus quejas producen mal efecto en los demás empleados. Lo mejor será:</li>
+                <div class="input-field">
+                    <select name="p02">
+                        <option value="" disabled selected>Selecciona la respuesta correcta</option>
+                        <option value="0">Pedir a los demás empleados que traten de no hacer caso.</option>
+                        <option value="1">Averiguar la causa de esa actitud y procurar su modificación.</option>
+                        <option value="0">Cambiarlo de departamento donde quede a cargo de otro jefe.</option>
+                        <option value="0">Permitirle planear lo más posible acerca de su trabajo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 3 -->
+                <li>Un empleado de 50 años de edad que ha sido leal a la empresa durante 25 años,
+                    se queja de exceso de trabajo, lo mejor sería:</li>
+                <div class="input-field">
+                    <select name="p03">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Decirle que vuelva a su trabajo o se expone a que lo despidan.</option>
+                        <option value="0">Despedirlo substituyéndolo por alguien más joven.</option>
+                        <option value="0">Darle un aumento de sueldo que evite que continúe quejándose.</option>
+                        <option value="1">Aminorar su trabajo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 4 -->
+                <li>Uno de sus socios, sin autoridad sobre usted, le ordena algo en forma distinta
+                    de lo que planeaba, ¿Qué haría usted?</li>
+                <div class="input-field">
+                    <select name="p04">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Acatar la orden y no armar mayor revuelo.</option>
+                        <option value="1">Ignorar las indicaciones y hacer según usted había planeado.</option>
+                        <option value="0">Decirle que éste es asunto que no le interesa y que usted hará las cosas a su
+                            modo.</option>
+                        <option value="0">Decirle que lo haga él mismo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 5 -->
+                <li>Usted visita a un amigo íntimo que ha estado enfermo por algún tiempo, lo mejor sería:</li>
+                <div class="input-field">
+                    <select name="p05">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Platicarle sus diversiones recientes.</option>
+                        <option value="1">Platicarle nuevas referentes a amigos mutuos.</option>
+                        <option value="0">Comentar su enfermedad.</option>
+                        <option value="0">Enfatizar lo mucho que le apena verle enfermo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 6 -->
+                <li>Trabaja usted en una industria y su jefe quiere que tome un curso
+                    relacionado con su trabajo, pero es incompatible con el horario nocturno de su carrera. Lo mejor
+                    sería:</li>
+                <div class="input-field">
+                    <select name="p06">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Continúe normalmente su carrera e informar al jefe si le pregunta.</option>
+                        <option value="1">Explicarle la situación y obtener su opinión en cuanto a la importancia
+                            relativa de ambas situaciones.</option>
+                        <option value="0">Dejar la escuela en atención a los intereses del trabajo.</option>
+                        <option value="0">Asistir en forma alterna y no hacer comentarios.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 7 -->
+                <li>Un agente viajero con 15 años de antigüedad, decide presionado por su familia,
+                    sentar raíces; se le cambia a las oficinas generales. Es de esperar que:</li>
+                <div class="input-field">
+                    <select name="p07">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Guste de lo descansado del trabajo de oficina.</option>
+                        <option value="1">Se sienta inquieto por la rutina de la oficina.</option>
+                        <option value="0">Busque otro trabajo.</option>
+                        <option value="0">Resulte muy eficiente en el trabajo de oficina.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 8 -->
+                <li>Tienen dos invitados a cenar, el uno radical y el otro conservador;
+                    surge una acalorada discusión respecto de política, lo mejor sería:</li>
+                <div class="input-field">
+                    <select name="p08">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Tomar partido.</option>
+                        <option value="1">Intentar cambiar de tema.</option>
+                        <option value="0">Intervenir dando los propios puntos de vista y mostrar donde ambos pecan de
+                            extremosos.</option>
+                        <option value="0">Pedir cambien de tema para evitar mayor discusión.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 9 -->
+                <li>Un joven invita a una dama al teatro al llegar se percata de que ha olvidado la cartera. Sería
+                    mejor:</li>
+                <div class="input-field">
+                    <select name="p09">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Tratar de obtener boletos dejando el reloj de prenda.</option>
+                        <option value="0">Buscar un amigo a quien pedir prestado.</option>
+                        <option value="1">Decidir de acuerdo con ella lo procedente.</option>
+                        <option value="0">Dar una excusa plausible para ir a casa por dinero.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 10 -->
+                <li>Usted ha tenido experiencia como vendedor y acaba de conseguir otro empleo en una tienda grande.
+                    La mejor forma de relacionarse con los empleados del departamento sería: </li>
+                <div class="input-field">
+                    <select name="p10">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Permitir hacer la mayoría de las ventas durante unos días, en tanto observa
+                            sus métodos.</option>
+                        <option value="0">Tratar de implantar los métodos que anteriormente le fueron útiles.</option>
+                        <option value="1">Adaptarse mejor a las condiciones y aceptar consejo de sus compañeros.</option>
+                        <option value="0">Pedir al jefe todo el consejo necesario.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 11 -->
+                <li>Es usted una joven empleada que va a comer con una maestra a quien
+                    conoce superficialmente, lo mejor sería iniciar la conversación acerca de:</li>
+                <div class="input-field">
+                    <select name="p11">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="1">Algún tópico de actualidad.</option>
+                        <option value="0">Algún aspecto interesante de su propio trabajo.</option>
+                        <option value="0">Las tendencias actuales en el terreno docente.</option>
+                        <option value="0">Las sociedades de padres de familia.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 12 -->
+                <li>Una señora de especiales méritos que por largo tiempo ha dirigido trabajos benéficos,
+                    dejando las labores de su casa a cargo de la servidumbre, se cambia a otra población. Es de
+                    esperarse que ella:</li>
+                <div class="input-field">
+                    <select name="p12">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Se sienta insatisfecha de su nuevo hogar.</option>
+                        <option value="0">Se interese más por los trabajos domésticos.</option>
+                        <option value="1">Intervenga poco a poco en la vida de la comunidad, continuando así sus
+                            intereses.</option>
+                        <option value="0">Adopte nuevos intereses en la nueva comunidad.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 13 -->
+                <li>Quiere pedirle un favor a un conocido con quien tiene poca confianza, la mejor forma de lograrlo
+                    sería:</li>
+                <div class="input-field">
+                    <select name="p13">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Haciéndole creer que será él quien se beneficie más.</option>
+                        <option value="0">Enfatice la importancia que para usted tiene que se lo conceda.</option>
+                        <option value="0">Ofrecer algo en retribución.</option>
+                        <option value="1">Decir lo que desea en forma breve indicando los motivos.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 14 -->
+                <li>Un joven de 24 años, gasta bastante tiempo y dinero en diversiones; se le ha hecho
+                    ver que así no logrará éxito en el trabajo. Probablemente cambie sus costumbres si:</li>
+                <div class="input-field">
+                    <select name="p14">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Sus hábitos nocturnos lesionan su salud.</option>
+                        <option value="0">Sus amigos enfatizan el daño que se hace a sí mismo.</option>
+                        <option value="0">Su jefe se da cuenta y lo previene.</option>
+                        <option value="1">Se interese en el desarrollo de alguna fase de su trabajo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 15 -->
+                <li>Tras de haber hecho un buen número de favores a un amigo, éste empieza a dar por hecho que será
+                    usted
+                    quien le resuelva todas sus pequeñas dificultades, la mejor forma de readaptar la situación sin
+                    ofenderle sería:</li>
+                <div class="input-field">
+                    <select name="p15"> 
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Explicar el daño que se está causando.</option>
+                        <option value="0">Pedir a un amigo mutuo que trate de arreglar las cosas.</option>
+                        <option value="0">Ayudarle una vez más, pero de tal manera que sienta que mejor hubiera sido no
+                            haberlo solicitado.</option>
+                        <option value="1">Darle una excusa para no seguir ayudándole.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 16 -->
+                <li>Una persona recién ascendida a un mejor puesto de autoridad lograría mejor sus metas y la buena
+                    voluntad de los empleados:</li>
+                <div class="input-field">
+                    <select name="p16">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Tratando de que cada empleado entienda qué es la verdadera eficiencia.</option>
+                        <option value="0">Ascendiendo cuanto antes a quienes considera lo merezcan.</option>
+                        <option value="0">Preguntando confidencialmente a cada empleado en cuanto a los cambios que
+                            estiman necesarios.</option>
+                        <option value="1">Seguir los sistemas del anterior jefe y gradualmente hacer los cambios
+                            necesarios.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 17 -->
+                <li>Vive a 15 kms. del centro y ha ofrecido llevar de regreso a un amigo a las 4 pm. él lo espera
+                    desde las 3 y a las 4 usted se entera que no podrá salir antes de las 5:30, sería mejor:</li>
+                <div class="input-field">
+                    <select name="p17">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Pedirle un taxi.</option>
+                        <option value="1">Explicarle y dejar que él decida.</option>
+                        <option value="0">Pedirle que espere hasta las 5:30.</option>
+                        <option value="0">Proponerle que se lleve su auto.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 18 -->
+                <li>Es usted un ejecutivo y dos de sus empleados se llevan mal; ambos son eficientes, lo mejor sería:</li>
+                <div class="input-field">
+                    <select name="p18">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Despedir al menos eficiente.</option>
+                        <option value="0">Darles trabajo en común que ambos les interese.</option>
+                        <option value="0">Hacerles ver el daño que se hacen.</option>
+                        <option value="1">Darles trabajos distintos.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 19 -->
+                <li>Ballesteros ha conservado su puesto de subordinado por 10 años, desempeña su trabajo callada
+                    y confiadamente y se le extrañará cuando se vaya. De obtener trabajo en otra empresa muy
+                    probablemente:</li>
+                <div class="input-field">
+                    <select name="p19">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Asuma fácilmente responsabilidades como supervisor.</option>
+                        <option value="0">Haga ver de inmediato su valer.</option>
+                        <option value="1">Sea lento para abrirse las necesarias oportunidades.</option>
+                        <option value="0">Renuncia ante la más ligera crítica de su trabajo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 20 -->
+                <li>Va usted a ser maestro de ceremonias en una cena el próximo sábado, día en que por la mañana
+                    y debido a enfermedad en la familia se ve imposibilitado de asistir, lo indicado sería:</li>
+                <div class="input-field">
+                    <select name="p20">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Cancelar la cena.</option>
+                        <option value="1">Encontrar quien lo sustituya.</option>
+                        <option value="0">Detallar los planes que tenía y enviarlos.</option>
+                        <option value="0">Enviar una nota explicando la causa de su ausencia.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 21 -->
+                <li>En igualdad de circunstancias el empleado que mejor se adapta a un nuevo puesto es aquel que:</li>
+                <div class="input-field">
+                    <select name="p21">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="1">Ha sido bueno en puestos anteriores.</option>
+                        <option value="0">Ha tenido éxito durante 10 años en su puesto.</option>
+                        <option value="0">Tiene sus propias ideas e invariablemente se rige por ellas.</option>
+                        <option value="0">Cuenta con una buena recomendación de su jefe anterior.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 22 -->
+                <li>Un conocido le platica acerca de una afición que él tiene, su conversación le aburre, lo mejor
+                    sería:</li>
+                <div class="input-field">
+                    <select name="p22">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="1">Escuchar de manera cortés pero aburrida.</option>
+                        <option value="0">Escuchar con fingido interés.</option>
+                        <option value="0">Decirle francamente que el tema no le interesa.</option>
+                        <option value="0">Mirar el reloj con impaciencia.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 23 -->
+                <li>Es usted un empleado ordinario en una oficina grande; el jefe entra cuando
+                    usted lee en vez de trabajar, lo mejor sería:</li>
+                <div class="input-field">
+                    <select name="p23">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="1">Doblar el periódico y volver al trabajo.</option>
+                        <option value="0">Pretender que obtiene recortes necesarios al trabajo.</option>
+                        <option value="0">Tratar de interesar al jefe leyéndole un encabezado importante.</option>
+                        <option value="0">Seguir leyendo sin mostrar embarazo.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 24 -->
+                <li>Es usted maestro de primaria; camino a la escuela tras la primera nevada, algunos de sus
+                    alumnos le lanzan bolas de nieve, desde el punto de vista de la buena administración
+                    escolar, usted debería:</li>
+                <div class="input-field">
+                    <select name="p24">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Castigarles ahí mismo por su indisciplina.</option>
+                        <option value="0">Decirles que de volverlo a hacer los castigaría.</option>
+                        <option value="0">Pasar la queja a sus padres.</option>
+                        <option value="1">Tomarlo como broma y nada hacer al respecto.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 25 -->
+                <li>Preside el comité de mejoras materiales en su colonia;
+                    las últimas reuniones han sido de escasa asistencia se mejoraría la asistencia:</li>
+                <div class="input-field">
+                    <select name="p25">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Visitando vecinos prominentes explicando los problemas.</option>
+                        <option value="1">Avisar de un programa interesante para la reunión.</option>
+                        <option value="0">Poner avisos en los lugares públicos.</option>
+                        <option value="0">Enviar avisos personales.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 26 -->
+                <li>Zaldívar, eficiente pero esos que “todo lo saben”, critica a Montoya, el jefe opina que
+                    la idea de Montoya ahorra tiempo; probablemente Zaldívar:</li>
+                <div class="input-field">
+                    <select name="p26">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Pida otro trabajo al jefe.</option>
+                        <option value="0">Lo haga a su modo sin comentarios.</option>
+                        <option value="1">Lo haga como Montoya, pero siga criticándolo.</option>
+                        <option value="0">Lo haga como Montoya, pero mal a propósito.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 27 -->
+                <li>Un hombre de 65 años tuvo algún éxito cuando joven como político; sus modos directos le
+                    han impedido descollar los últimos 20 años, lo más probable es que:</li>
+                <div class="input-field">
+                    <select name="p27">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="1">Persista en su manera de ser.</option>
+                        <option value="0">Cambie para lograr éxito.</option>
+                        <option value="0">Forme un nuevo partido político.</option>
+                        <option value="0">Abandone la política por inmoral.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 28 -->
+                <li>Es usted una joven que se encuentra en la calle a una mujer de más edad a quien apenas
+                    conoce y que parece haber estado llorando, lo mejor sería:</li>
+                <div class="input-field">
+                    <select name="p28">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Preguntarle por qué está triste.</option>
+                        <option value="0">Pasarle el brazo consoladoramente.</option>
+                        <option value="1">Simular no advertir su pena.</option>
+                        <option value="0">Simular no haberla visto.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 29 -->
+                <li>Un compañero flojea de tal manera que a usted le toca más de lo que le corresponde,
+                    la mejor forma de conservar las buenas relaciones es:</li>
+                <div class="input-field">
+                    <select name="p29">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="0">Explicar el caso al jefe cortésmente.</option>
+                        <option value="0">Cortésmente indicarle que debe hacer lo que el corresponde o que usted se
+                            quejará al jefe.</option>
+                        <option value="1">Hacer tanto como pueda eficientemente y nada decir del caso.</option>
+                        <option value="0">Hacer lo suyo y dejar pendiente lo que el compañero no haga.</option>
+                    </select>
+                </div>
+                <!-- Pregunta 30 -->
+                <li>Se le ha asignado un puesto ejecutivo en organización, para ganar el
+                    respeto y admiración de sus subordinados sin perjuicio de sus planes, habría que:</li>
+                <div class="input-field">
+                    <select class="validate" name="p30">
+                        <option value="" disabled selected>Selecciona la respuesta correcta.</option>
+                        <option value="1">Ceder en todos los pequeños puntos posibles.</option>
+                        <option value="0">Tratar de convencerlos de todas sus ideas.</option>
+                        <option value="0">Ceder parcialmente en todas las cuestiones importantes.</option>
+                        <option value="0">Abogar por muchas formas.</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button class="btn waves-effect waves-light blue right" type="submit" name="action">
+                        <i class="material-icons right">send</i>ENVIAR</button>
+                    <br>
+                </div>
+            </ol><!-- FIN DE LISTA -->
+        </form>
+    </div><!-- FIN DEL FORM -->
+
+
+    <!-- Footer -->
+    <footer class="page-footer" id="menu-fondo">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">asda</h5>
+                    <p class="grey-text text-lighten-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, omnis! Doloribus, error
+                        nemo
+                        excepturi accusamus laboriosam possimus a magnam quo, illum inventore ut! Dicta temporibus
+                        est
+                        eveniet quis nihil pariatur.
+                    </p>
+
+
+                </div>
+                <div class="col l6 s12">
+
+                    <ul>
+                        <li><a class="white-text" href="#!">Inicio</a></li>
+                        <li><a class="white-text" href="#!">Tests</a></li>
+                        <li><a class="white-text" href="#!">Recursos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" id="fondo-footer-inferior">
+            <div class="container">
+                Desarrollado por <a class="brown-text text-lighten-3" href="https://www.facebook.com/gustavo.castillonajera.31">LastShadow</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Inicializar los JS del proyecto -->
+    <script>
+
+        M.toast({ html: 'Bienvenido!', classes: 'rounded' });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+            M.AutoInit();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+
+</html>

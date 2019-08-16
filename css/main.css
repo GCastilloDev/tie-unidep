@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,600,700');
+
+html{
+    font-family: 'Prompt', sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+#logo-text{
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 0px;
+}
+
+#logo-text-movil{
+    font-weight: 600;
+    font-size: 11px;
+    margin-left: 0px;
+}
+
+#logo-img{
+    padding: 5px;
+}
+
+#menu-fondo{
+    /* Propuesta marco
+    background: #113743;
+    */
+    
+    background: #003a5c;
+}
+
+#banner-text-1{
+    font-weight: 600;
+    color: #fbff02;
+}
+
+#text-menu{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#fondo-footer-inferior{
+    background: #003453;
+}
+
+#redes-sociales-footer{
+    font-size: 30px;
+}
+
+#img-contenido{
+    margin-top: 30px;
+}
+
+.fondo-movil{
+    background: #003a5c;
+}
+
+#instrucciones{
+    font-size: 22px;
+}
+
+#preguntas{
+    font-size: 5px;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: black;/* no need for !important :) */
+}
+
+
+#card-titulo{
+    font-weight: 600;
+}
+
+p, li{
+    text-align: justify;
+}
+
+select.fixed {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+}
+
+nav ul a{
+    font-size: 18px;    
+}
+
+h1{
+    font-size: 40px;
+    padding: 0%;
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+
+
+.collapsible-body{
+    padding: 0px 10px 0px 15px;
+}
+
+
+
+label{
+    color: black !important;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #efa33f !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #efa33f !important;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #efa33f;
+    border-bottom: 2px solid #efa33f;
+}
+
+.input-field{
+    margin-top: 0;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 1rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+
+input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:not(.browser-default), input.valid[type=text]:not(.browser-default):focus, input.valid[type=password]:not(.browser-default), input.valid[type=password]:not(.browser-default):focus, input.valid[type=email]:not(.browser-default), input.valid[type=email]:not(.browser-default):focus, input.valid[type=url]:not(.browser-default), input.valid[type=url]:not(.browser-default):focus, input.valid[type=time]:not(.browser-default), input.valid[type=time]:not(.browser-default):focus, input.valid[type=date]:not(.browser-default), input.valid[type=date]:not(.browser-default):focus, input.valid[type=datetime]:not(.browser-default), input.valid[type=datetime]:not(.browser-default):focus, input.valid[type=datetime-local]:not(.browser-default), input.valid[type=datetime-local]:not(.browser-default):focus, input.valid[type=tel]:not(.browser-default), input.valid[type=tel]:not(.browser-default):focus, input.valid[type=number]:not(.browser-default), input.valid[type=number]:not(.browser-default):focus, input.valid[type=search]:not(.browser-default), input.valid[type=search]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
+    border-bottom: 1px solid #efa33f !important;
+    -webkit-box-shadow: 0 1px 0 0 #efa33f !important;
+    box-shadow: 0 1px 0 0 #efa33f !important;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #efa33f !important;
+    -webkit-box-shadow: 0 1px 0 0 #efa33f !important;
+    box-shadow: 0 1px 0 0 #efa33f !important;
+}
+
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-transition: .28s ease;
+    transition: .28s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+td{
+    padding: 0px 5px;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: rgba(239,163,63,.5) !important;
+}
+
+table.highlight>tbody>tr {
+    -webkit-transition: background-color .25s ease;
+    transition: background-color .25s ease;
+}
+
+.tabs {
+    background-color: transparent !important;
+}
